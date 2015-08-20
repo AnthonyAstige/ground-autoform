@@ -4,9 +4,15 @@ This package addresses some the most common problems I've encountered while maki
 
 **Installation**
 
+Add the package
+
 `meteor add anthonyastige::ground-autoform`
 
-That's it.  The hooks should automatically ground your autoforms.
+Add groundType to your forms like so
+
+`{{> quickForm groundType="insert" ...}}`
+
+That's it.  The hooks should now automatically ground that autoforms.
 
 **Referneces**
 * https://github.com/aldeed/meteor-autoform
