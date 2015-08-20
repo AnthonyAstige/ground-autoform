@@ -14,6 +14,6 @@ Add groundType to your forms like so
 
 That's it.  The hooks should now automatically ground that autoforms.
 
-## Referneces
+## References
 * https://github.com/aldeed/meteor-autoform
 * https://github.com/GroundMeteor/db
