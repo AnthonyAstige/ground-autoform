@@ -13,7 +13,7 @@ Package.onUse(function(api) {
 	api.use('standard-app-packages');
 
 	api.use([
-		'aldeed:autoform'
+		'aldeed:autoform@5.4.1'
 	]);
 
 	api.addFiles([
