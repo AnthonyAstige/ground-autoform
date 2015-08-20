@@ -7,10 +7,26 @@ if (Meteor.isClient) {
 	 * * Form resets without waiting for server
 	 * * For use with grounddb
 	 */
-	// TODO: Make work with an insert hook so add type=insert to form (is hacked w/o type)
 	AutoForm.addHooks(null, {
 		onSubmit: function(insertDoc, updateDoc, currentDoc) {
-			this.collection.insert(insertDoc);
+			// All forms should have groundType if we have an offline application
+			if (!this.formAttributes.groundType) {
+				console.log('Missing groundType on form definition');
+				return false;
+			}
+
+			// Address types of forms we help
+			switch (this.formAttributes.groundType) {
+				case 'insert':
+					this.collection.insert(insertDoc);
+					break;
+				default:
+					console.log(
+						'Invalid value for groundType:' + this.formAttributes.groundType
+					);
+			}
+
+			// We're done
 			this.done();
 			return false;
 		}
