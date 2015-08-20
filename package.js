@@ -17,6 +17,6 @@ Package.onUse(function(api) {
 	]);
 
 	api.addFiles([
-		'ground-autoform.js'
+		'hooks.js'
 	]);
 });
