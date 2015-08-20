@@ -10,9 +10,9 @@ if (Meteor.isClient) {
 	// TODO: Make work with an insert hook so add type=insert to form (is hacked w/o type)
 	AutoForm.addHooks(null, {
 		onSubmit: function(insertDoc, updateDoc, currentDoc) {
-			this.collection.insert(insertDoc);
-			this.done();
-			return false;
+//			this.collection.insert(insertDoc);
+//			this.done();
+//			return false;
 		}
 	});
 }
