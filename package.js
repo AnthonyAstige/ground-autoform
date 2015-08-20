@@ -5,7 +5,7 @@ Package.describe({
   summary: 'Makes autoforms behave better when offline',
   version: '0.0.1',
   git: 'https://github.com/AnthonyAstige/ground-autoform',
-  name: 'AnthonyAstige:ground-autoform'
+  name: 'anthonyastige:ground-autoform'
 });
 
 Package.onUse(function(api) {
