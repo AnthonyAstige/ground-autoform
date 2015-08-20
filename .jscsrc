@@ -1,0 +1,12 @@
+{
+	"preset": "jquery",
+	"requirePaddingNewLinesBeforeLineComments": null,
+	"requireSpacesInsideParentheses": null,
+	"validateQuoteMarks": { "mark": "'", "escape": true },
+	"maximumLineLength": { "value": 90, "allowUrlComments": true },
+	"validateLineBreaks": "LF",
+	"disallowMultipleVarDecl": true,
+	"requireMultipleVarDecl": null,
+	"requireSpacesInsideArrayBrackets": null,
+	"excludeFiles": ["packages/npm-container/.npm/*", ".meteor", ".git", ".uploads"]
+}
