@@ -12,7 +12,7 @@ Add groundType to your forms like so
 
 `{{> quickForm groundType="insert" ...}}`
 
-That's it.  The hooks should now automatically ground that autoforms.
+That's it.  The hooks should now automatically ground that autoform.
 
 ## References
 * https://github.com/aldeed/meteor-autoform
