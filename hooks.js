@@ -1,5 +1,5 @@
 'use strict';
-/*global Meteor, AutoForm*/
+/*global Meteor, AutoForm, EJSON*/
 
 if (Meteor.isClient) {
 	/**
@@ -19,6 +19,14 @@ if (Meteor.isClient) {
 			switch (this.formAttributes.groundType) {
 				case 'insert':
 					this.collection.insert(insertDoc);
+					break;
+				case 'edit':
+					// Don't change the _id as minimongo doesn't like that
+					var update = EJSON.clone(updateDoc);
+					delete update.$set._id;
+
+					// Do the edit
+					this.collection.update(currentDoc._id, update);
 					break;
 				default:
 					console.log(
