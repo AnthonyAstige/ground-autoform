@@ -3,7 +3,7 @@
 
 Package.describe({
   summary: 'Makes autoforms behave better when offline',
-  version: '0.0.5',
+  version: '0.0.6',
   git: 'https://github.com/AnthonyAstige/ground-autoform',
   name: 'anthonyastige:ground-autoform'
 });
